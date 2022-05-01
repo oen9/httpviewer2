@@ -24,7 +24,7 @@
 
   <logger name="oen9" level="trace" />
 
-  <root level="debug">
+  <root level="error">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="FILE" />
   </root>
