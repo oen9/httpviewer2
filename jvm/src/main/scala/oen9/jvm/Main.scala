@@ -55,8 +55,5 @@ object Main extends IOApp, Logging[IO]:
         .withPort(Port.fromInt(cfg.http.port).getOrElse(port"8080"))
         .withHttpApp(cors(httpApp))
         .build
-        .use { s =>
-          IO.sleep(30.seconds)
-        }
-        //.useForever
+        .useForever
     } yield ()
